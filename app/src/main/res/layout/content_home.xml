@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8EAF6"
+    tools:context="dev.android.timelog.HomeActivity">
+
+
+    -------setting button
+
+
+    <RelativeLayout
+        android:id="@+id/headerWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:background="#2196F3"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hud"
+            >
+
+            <TextView
+                android:id="@+id/txvUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:paddingBottom="0dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="0dp"
+                android:paddingTop="10dp"
+                android:text="Username "
+                android:textColor="#FAFAFA"
+                android:textSize="18dp"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/txvCurrentDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txvUserName"
+                android:layout_weight="2"
+                android:drawableLeft="@drawable/ic_date_range_black_24dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="0dp"
+                android:paddingTop="10dp"
+                android:text=" 12/01/2017"
+                android:textColor="#FAFAFA"
+                android:textSize="14dp"
+                android:gravity="center"
+                />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="15dp"
+            android:drawableRight="@drawable/ic_settings_black_24dp"
+            android:background="?android:attr/selectableItemBackground"
+            />
+    </RelativeLayout>
+    ----------------------------
+
+    <Button
+        android:id="@+id/btnViewJobs"
+        android:layout_width="280dp"
+        android:layout_height="140dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/headerWrapper"
+        android:layout_marginTop="37dp"
+        android:background="@drawable/bg_viewjobs"
+        android:drawableRight="@drawable/ic_format_list_bulleted_black_38dp"
+        android:listSelector="#607D8B"
+        android:paddingBottom="12dp"
+        android:paddingRight="18dp"
+        android:text="View Jobs"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#FAFAFA"
+        android:textStyle="italic" />
+
+
+    <Button
+        android:id="@+id/btnViewSummary"
+        style="@style/AppTheme"
+        android:layout_width="280dp"
+        android:layout_height="140dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnViewJobs"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/bg_summary"
+        android:drawableLeft="@drawable/ic_assignment_black_39dp"
+        android:listSelector="#607D8B"
+        android:paddingBottom="18dp"
+        android:paddingLeft="18dp"
+        android:text="Summary"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#FAFAFA"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/copyright"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnViewSummary"
+        android:layout_marginTop="36dp"
+        android:background="#2196F3"
+        android:paddingLeft="93dp"
+        android:text="\u00A9 2017.mobile.app"
+        android:textColor="#FAFAFA"
+        android:textSize="18dp"
+        android:textStyle="italic" />
+
+
+</RelativeLayout>
+
+    <!-- android:background="?android:attr/selectableItemBackground"
+     android:layout_centerHorizontal="true"-->

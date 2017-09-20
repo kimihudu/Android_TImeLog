@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/txvDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_weight="1"
+        android:text="Date"
+        android:textColor="#283593"
+        android:textSize="18sp"
+        android:gravity="center_vertical"/>
+
+    <TextView
+        android:id="@+id/txvTimeIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="In"
+        android:textColor="#283593"
+        android:textSize="18sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/txvTimeOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Out"
+        android:textColor="#283593"
+        android:textSize="18sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/txvBreak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Break"
+        android:textColor="#283593"
+        android:textSize="18sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/txvTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Total"
+        android:textColor="#283593"
+        android:textSize="18sp"
+        android:gravity="center"/>
+
+</LinearLayout>

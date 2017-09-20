@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8EAF6"
+    tools:context="dev.android.timelog.AddJobActivity">
+
+
+    <TextView
+        android:id="@+id/JobDetail_TextView"
+        android:background="#3F51B5"
+        android:textColor="#FAFAFA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="10dp"
+        android:text="Job Details "
+        />
+
+    <EditText
+        android:id="@+id/Title_EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Job Title"
+        android:layout_below="@id/JobDetail_TextView"
+        android:scrollHorizontally="true"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_weight="1"
+        android:paddingLeft="12dp"
+        android:drawableLeft="@drawable/ic_work_black_24dp"
+        android:drawablePadding="10dp"
+        android:inputType="text"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="45dp"
+        android:textColor="#1A237E"/>
+
+    <EditText
+        android:id="@+id/Adress_EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address"
+        android:layout_below="@id/Title_EditText"
+        android:maxLines="2"
+        android:scrollHorizontally="true"
+        android:ellipsize="end"
+        android:layout_weight="1"
+        android:paddingLeft="10dp"
+        android:drawablePadding="10dp"
+        android:textColor="#1A237E"
+        android:inputType="text"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="45dp"
+        android:drawableLeft="@drawable/ic_location_on_black_24dp"
+        />
+
+    <EditText
+        android:id="@+id/Phne_EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone"
+        android:layout_below="@id/Adress_EditText"
+        android:maxLines="2"
+        android:scrollHorizontally="true"
+        android:ellipsize="end"
+        android:layout_weight="1"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#1A237E"
+        android:drawablePadding="10dp"
+        android:inputType="text"
+        android:layout_marginRight="45dp"
+        android:drawableLeft="@drawable/ic_call_black_24dp"
+        />
+
+    <EditText
+        android:id="@+id/Rate_EditText"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:hint="  Description "
+        android:layout_marginRight="42dp"
+        android:layout_marginLeft="8dp"
+        android:layout_below="@id/Phne_EditText"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:layout_weight="1"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#1A237E"
+        android:inputType="textMultiLine"
+        android:textSize="18dp"
+        android:background="@drawable/edit_style"
+        android:drawableLeft="@drawable/ic_insert_comment_black_24dp"
+        />
+
+    <View
+        android:id="@+id/Rate_view"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#9CCC65"
+        android:layout_below="@id/Rate_EditText"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:id="@+id/Wages_TextView"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:textSize="21dp"
+        android:text="Wages"
+        android:textColor="#FFFFFF"
+        android:layout_alignTop="@+id/Rate_view"
+        android:paddingTop="5dp"
+        android:paddingLeft="12dp"
+        />
+    <TextView
+        android:id="@+id/Rate_TextView"
+        android:layout_width="25dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/Rate_view"
+        android:text=" "
+        android:textSize="28dp"
+        android:textColor="#1A237E"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/ic_attach_money_black_28dp"
+        />
+
+    <EditText
+        android:id="@+id/Wages_EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@id/Rate_TextView"
+        android:layout_below="@id/Rate_view"
+        android:background="@drawable/edit_style"
+        android:hint=" 00.00"
+        android:textColor="#1A237E"
+        android:textSize="23dp"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:id="@+id/Perhour_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:layout_marginTop="20dp"
+        android:text=" / Per Hour"
+        android:layout_marginLeft="3dp"
+        android:layout_below="@id/Rate_view"
+        android:layout_toRightOf="@id/Wages_EditText"
+        />
+    <View
+        android:id="@+id/ShiftEntry_view"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:background="#9CCC65"
+        android:layout_below="@id/Rate_TextView"
+        android:layout_marginTop="16dp"
+        />
+
+    <TextView
+        android:id="@+id/ShiftEntry_TextView"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:textSize="21dp"
+        android:text="Shift Entry"
+        android:textColor="#FFFFFF"
+        android:layout_alignTop="@+id/ShiftEntry_view"
+        android:paddingTop="5dp"
+        android:paddingLeft="12dp"
+        />
+
+    <Button
+        android:id="@+id/DateEntry_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ShiftEntry_view"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="93dp"
+        android:hint="  12/23/2017"
+        android:textSize="21dp"
+        android:drawableLeft="@drawable/ic_date_range_black_29dp"
+        />
+
+    <ImageView
+        android:id="@+id/Clock_Image"
+        android:layout_width="55dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/DateEntry_Button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/timedate"
+
+        />
+
+    <Button
+        android:id="@+id/TimeIn_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Clock_Image"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="93dp"
+        android:hint="  00:00 AM/PM"
+        android:textSize="21dp"
+        android:drawableLeft="@drawable/ic_timer_black_24dp"
+        />
+
+    <Button
+        android:id="@+id/TimeOut_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TimeIn_Button"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="93dp"
+        android:hint="  00:00 AM/PM"
+        android:textSize="21dp"
+        android:drawableLeft="@drawable/ic_timer_off_black_24dp"
+        />
+    <Button
+        android:id="@+id/BreakTimeIn_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TimeOut_Button"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="93dp"
+        android:hint="Break Time 00:00"
+        android:textSize="21dp"
+        android:drawableLeft="@drawable/ic_free_breakfast_black_24dp"
+        />
+
+    <!--<Button-->
+        <!--android:id="@+id/BreakTimeOut_Button"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/BreakTimeIn_Button"-->
+        <!--android:layout_marginTop="18dp"-->
+        <!--android:layout_marginLeft="93dp"-->
+        <!--android:hint="  Break Over 00:00"-->
+        <!--android:textSize="21dp"-->
+        <!--android:drawableLeft="@drawable/ic_timer_off_black_24dp"-->
+        <!--/>-->
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_menu_add"
+        app:backgroundTint="@color/colorPrimaryDark"/>
+</RelativeLayout>
+
+</ScrollView>
+

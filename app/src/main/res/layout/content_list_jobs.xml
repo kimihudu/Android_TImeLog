@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:descendantFocusability="blocksDescendants" >
+
+    <View
+        android:id="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="4dp"
+        android:background="#B0BEC5"
+
+        />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="27dp"
+            android:layout_height="35dp"
+            android:layout_alignRight="@+id/actionBar"
+            android:layout_alignTop="@+id/actionBar"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="0dp"
+            android:background="#B0BEC5"
+            android:drawableRight="@drawable/ic_delete_sweep_black_24dp"
+            android:focusable="false"/>
+
+        <!--<Button-->
+            <!--android:id="@+id/btnEdit"-->
+            <!--android:layout_width="28dp"-->
+            <!--android:layout_height="35dp"-->
+            <!--android:layout_alignTop="@+id/actionBar"-->
+            <!--android:layout_marginBottom="1dp"-->
+            <!--android:layout_marginLeft="1dp"-->
+            <!--android:layout_marginRight="15dp"-->
+            <!--android:layout_marginTop="0dp"-->
+            <!--android:layout_toLeftOf="@+id/btnDelete"-->
+            <!--android:background="#B0BEC5"-->
+            <!--android:drawableRight="@drawable/ic_border_color_black_24dp" />-->
+
+    <TextView
+        android:id="@+id/txvJobTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/actionBar"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight="1"
+        android:background="#ECEFF1"
+        android:drawableLeft="@drawable/ic_work_black_24dp"
+        android:paddingBottom="18dp"
+        android:paddingLeft="18dp"
+        android:paddingTop="8dp"
+        android:text=" Job Title"
+        android:textColor="#1A237E"
+        android:textSize="18dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/txvJobRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txvJobTitle"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight="1"
+        android:background="#ECEFF1"
+        android:drawableLeft="@drawable/ic_attach_money_black_24dp"
+        android:paddingBottom="18dp"
+        android:paddingLeft="18dp"
+        android:paddingTop="8dp"
+        android:text="Job payrate"
+        android:textColor="#1A237E"
+        android:textSize="18dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/txvJobLoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txvJobRate"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight="1"
+        android:background="#ECEFF1"
+        android:drawableLeft="@drawable/ic_place_black_24dp"
+        android:paddingBottom="11dp"
+        android:paddingLeft="14dp"
+        android:paddingTop="8dp"
+        android:text="Job Location"
+        android:textColor="#1A237E"
+        android:textSize="18dp"
+        android:textStyle="italic" />
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECEFF1"
+    android:orientation="vertical"
+    tools:context="dev.android.timelog.SummaryActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txSummaryHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="#2196F3"
+            android:gravity="center|top"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="History Record"
+            android:textColor="#FAFAFA"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="38dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/txSummaryHeading"
+            android:layout_marginTop="5dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableLeft="@drawable/ic_chevron_left_black_34dp"
+            android:paddingLeft="8dp"
+            />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lvHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"></ListView>
+
+
+    <View
+        android:id="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#B0BEC5"
+        android:listSelector="#1A237E" />
+
+    <ListView
+        android:id="@+id/lvContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:listSelector="#AED581"></ListView>
+
+    <Button
+        android:id="@+id/btnExport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:drawableLeft="@drawable/ic_import_export_black_24dp"
+        android:text="Send CSV to Email" />
+
+    <!--<ListView-->
+    <!--android:id="@+id/listView3"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:listSelector="#AED581">-->
+    <!--</ListView>-->
+
+</LinearLayout>
+
+

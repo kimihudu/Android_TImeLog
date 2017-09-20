@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    tools:context="dev.android.timelog.MainActivity">
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="user" />
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/info"
+        android:text="timer" />
+
+    <Spinner
+        android:id="@+id/jobList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/wrapper"
+        android:layout_marginStart="47dp"
+        android:layout_toEndOf="@+id/timer" />
+
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wrapper"
+        android:text="total" />
+
+    <TextView
+        android:id="@+id/hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/total"
+        android:text="working hours" />
+
+    <Button
+        android:id="@+id/punchIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hours"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="43dp"
+        android:layout_toEndOf="@+id/hours"
+        android:text="punch in" />
+
+    <Button
+        android:id="@+id/punchOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/punchIn"
+        android:layout_below="@+id/punchIn"
+        android:layout_marginTop="58dp"
+        android:text="punch out" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/punchOut"/>
+</RelativeLayout>

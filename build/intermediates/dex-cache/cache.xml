@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\GeorgyGeo\AndroidStudioProjects\TimeLog\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="C:\Users\GeorgyGeo\AndroidStudioProjects\TimeLog\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_dbd62e71bc860c9d1049c8c509bbe90d92e002de\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\GeorgyGeo\AndroidStudioProjects\TimeLog\app\libs\gson-2.8.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="02a8e0aa38a2e21cb39e2f5a7d6704cbdc941da0">
+        <dex dex="C:\Users\GeorgyGeo\AndroidStudioProjects\TimeLog\app\build\intermediates\transforms\dex\debug\folders\1000\2\gson-2.8.1_f5818ef3a2ad566a74c4f185b7a5878a5972bf8f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\GeorgyGeo\AndroidStudioProjects\TimeLog\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="0f36713d5a87d2deb98b3bb558fe658cf9e65850">
+        <dex dex="C:\Users\GeorgyGeo\AndroidStudioProjects\TimeLog\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_0fdb39746631d0c5a999e87f7a7a73d94095cfd4\classes.dex" />
+    </item>
+
+</items>

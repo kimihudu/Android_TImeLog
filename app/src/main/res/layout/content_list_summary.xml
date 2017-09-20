@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/txJobTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_weight="1"
+        android:text="Job"
+        android:textColor="#283593"
+        android:textSize="22dp"
+        android:gravity="center_vertical"/>
+
+    <TextView
+        android:id="@+id/txTotalHours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="WorkHours"
+        android:textColor="#283593"
+        android:textSize="22dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/txTotalSalary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Salary"
+        android:textColor="#283593"
+        android:textSize="22dp"
+        android:gravity="center"/>
+
+</LinearLayout>
